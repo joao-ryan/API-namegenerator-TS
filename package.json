@@ -1,4 +1,27 @@
 {
+  "name": "api-namegeneratorts",
+  "version": "1.0.0",
+  "description": "A simple API for generating random names.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "test": "node dist/index.ts"
+  },
+  "keywords": [
+    "api",
+    "name-generator",
+    "typescript",
+    "express"
+  ],
+  "author": "Ryan",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.3.1",
@@ -7,10 +30,7 @@
     "winston": "^3.19.0",
     "zod": "^4.3.6"
   },
-  "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/node": "^25.5.0",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.9.3"
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
