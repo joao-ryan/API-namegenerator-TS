@@ -1,70 +1,80 @@
-# 🚀 Startup Name Generator API
+<!-- BANNER -->
 
-<div align="center">
+<h1 align="center">🚀 Startup Name Generator API</h1>
 
-### ✨ Gerador Inteligente de Nomes para Startups ✨
+<p align="center">
+✨ Gerador Inteligente de Nomes para Startups ✨
+</p>
 
-API moderna construída com **Node.js + TypeScript** para gerar nomes criativos de startups a partir de palavras-chave.
-
-<br>
-
-![Node](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge)
-![Winston](https://img.shields.io/badge/Winston-000000?style=for-the-badge)
-![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
-
-</div>
+<p align="center">
+API moderna construída com <b>Node.js</b> e <b>TypeScript</b> para gerar nomes criativos de startups.
+</p>
 
 ---
 
-# 🧠 Sobre o Projeto
+<p align="center">
 
-A **Startup Name Generator API** é uma API backend que gera nomes criativos e profissionais para startups com base em palavras fornecidas pelo usuário.
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white"/>
+<img src="https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Winston-000000?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
 
-O objetivo deste projeto é demonstrar **boas práticas de desenvolvimento backend**, incluindo:
+</p>
 
-✔ Arquitetura em camadas  
-✔ Validação robusta de dados  
-✔ Tipagem forte com TypeScript  
-✔ Logs estruturados  
-✔ Estrutura escalável de API  
+---
 
-Este projeto serve como exemplo de **API profissional utilizando Node.js**.
+# ✨ Visão Geral
+
+A **Startup Name Generator API** é uma API backend desenvolvida para gerar **nomes criativos e profissionais para startups** a partir de palavras fornecidas pelo usuário.
+
+Este projeto demonstra **boas práticas modernas de desenvolvimento backend**, incluindo:
+
+🧠 arquitetura organizada  
+🔐 validação de dados robusta  
+⚡ performance e simplicidade  
+📜 logs estruturados  
+🔷 tipagem forte com TypeScript  
+
+Ideal para demonstrar **boas práticas de engenharia de software** em projetos Node.js.
 
 ---
 
 # 🛠️ Tecnologias Utilizadas
 
+<div align="center">
+
 | Tecnologia | Função |
 |-------------|-------------|
-| ⚡ Node.js | Ambiente de execução |
-| 🔷 TypeScript | Tipagem estática |
-| 🚀 Express | Framework backend |
-| 🧠 Zod | Validação de dados |
-| 🆔 UUID | Identificação única |
-| 📜 Winston | Sistema de logs |
-| 🌍 CORS | Controle de acesso |
-| 🔐 dotenv | Variáveis de ambiente |
+| ⚡ **Node.js** | Ambiente de execução |
+| 🔷 **TypeScript** | Tipagem estática |
+| 🚀 **Express** | Framework backend |
+| 🧠 **Zod** | Validação de dados |
+| 🆔 **UUID** | Identificadores únicos |
+| 📜 **Winston** | Sistema de logs |
+| 🌍 **CORS** | Controle de acesso |
+| 🔐 **dotenv** | Variáveis de ambiente |
+
+</div>
 
 ---
 
 # 📦 Instalação
 
-Clone o repositório:
+Clone o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/startup-name-generator-api.git
 ```
 
-Entre na pasta do projeto:
+Entre na pasta
 
 ```bash
 cd startup-name-generator-api
 ```
 
-Instale as dependências:
+Instale as dependências
 
 ```bash
 npm install
@@ -74,25 +84,25 @@ npm install
 
 # 🚀 Executando o Projeto
 
-### Ambiente de desenvolvimento
+### 💻 Ambiente de desenvolvimento
 
 ```bash
 npm run dev
 ```
 
-### Build da aplicação
+### 📦 Build da aplicação
 
 ```bash
 npm run build
 ```
 
-### Rodar em produção
+### ⚙️ Rodar em produção
 
 ```bash
 npm start
 ```
 
-Servidor iniciará em:
+Servidor disponível em
 
 ```
 http://localhost:3000
@@ -102,13 +112,13 @@ http://localhost:3000
 
 # 📡 Endpoints da API
 
-## Gerar nomes de startup
+## 🧠 Gerar nomes de startup
 
 ```
 POST /api/generate
 ```
 
-### Body da requisição
+### 📥 Body da requisição
 
 ```json
 {
@@ -117,18 +127,18 @@ POST /api/generate
 }
 ```
 
-### Resposta da API
+### 📤 Resposta
 
 ```json
 {
   "count": 5,
   "names": [
     {
-      "id": "a9f1c",
+      "id": "92af2",
       "name": "TechNova"
     },
     {
-      "id": "b2d9a",
+      "id": "3f1a2",
       "name": "CloudHub"
     }
   ]
@@ -139,7 +149,7 @@ POST /api/generate
 
 # ⚙️ Arquitetura do Projeto
 
-Este projeto segue um modelo de **arquitetura em camadas**, separando responsabilidades.
+Este projeto utiliza **arquitetura em camadas**, separando responsabilidades.
 
 ```
 src
@@ -166,32 +176,37 @@ src
 └── server.ts
 ```
 
-Essa estrutura facilita:
+### Benefícios dessa estrutura
 
-✔ manutenção  
+✔ organização  
+✔ manutenção simples  
 ✔ escalabilidade  
-✔ organização do código  
+✔ código mais limpo  
 
 ---
 
-# 🧪 Sistema de Validação
+# 🧪 Validação de Dados
 
-A API utiliza **Zod** para validar dados de entrada.
+As requisições são validadas com **Zod** antes de serem processadas.
 
-Exemplo de validação:
+Exemplo:
 
 ```ts
 words: z.array(z.string()).min(1)
 amount: z.number().min(1).max(50)
 ```
 
-Isso garante que requisições inválidas sejam bloqueadas antes da execução da lógica da aplicação.
+Isso garante:
+
+🧠 segurança  
+⚡ previsibilidade  
+🔒 proteção contra dados inválidos  
 
 ---
 
 # 📜 Sistema de Logs
 
-Os logs são feitos utilizando **Winston**, gerando registros estruturados.
+A API utiliza **Winston** para gerar logs estruturados.
 
 Exemplo:
 
@@ -205,11 +220,11 @@ Exemplo:
 
 ---
 
-# 🧠 Como o Gerador de Nomes Funciona
+# 🧠 Como o Gerador Funciona
 
-O sistema combina palavras fornecidas pelo usuário com sufixos pré-definidos.
+O algoritmo combina palavras fornecidas pelo usuário com sufixos tecnológicos.
 
-Exemplo:
+Exemplo de combinações
 
 ```
 Tech + Nova
@@ -225,28 +240,29 @@ CloudFlow
 DataHub
 ```
 
-Isso permite gerar nomes de startups de forma rápida e criativa.
+Isso permite gerar **nomes rápidos e criativos para startups**.
 
 ---
 
 # 🔮 Melhorias Futuras
 
-Possíveis melhorias planejadas para o projeto:
+Possíveis melhorias planejadas:
 
-🚀 geração de nomes usando IA  
-🌐 verificação de disponibilidade de domínio  
-📊 ranking dos melhores nomes gerados  
+🤖 geração de nomes com IA  
+🌐 verificação de domínio disponível  
 📄 documentação automática com Swagger  
 🐳 containerização com Docker  
 🧪 testes automatizados com Jest  
+📊 ranking de melhores nomes  
 
 ---
 
 # 👨‍💻 Autor
 
-Desenvolvido por **Ryan**
+Desenvolvido por **João Ryan**
 
-Estudante de tecnologia e desenvolvedor focado em backend, apaixonado por construir sistemas escaláveis e bem estruturados.
+💻 Desenvolvedor em formação  
+🚀 Apaixonado por backend e arquitetura de software  
 
 ---
 
@@ -260,8 +276,8 @@ Se você gostou do projeto:
 
 ---
 
-<div align="center">
+<p align="center">
 
-🚀 **Construindo APIs modernas com Node.js e TypeScript**
+🚀 <b>Construindo APIs modernas com Node.js e TypeScript</b>
 
-</div>
+</p>
