@@ -1,12 +1,13 @@
 {
   "name": "api-namegeneratorts",
   "version": "1.0.0",
-  "description": "A simple API for generating random names.",
-  "main": "dist/index.js",
+  "description": "A simple API for generating random startup names.",
+  "main": "dist/server.js",
   "scripts": {
-    "start": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
     "build": "tsc",
-    "test": "node dist/index.ts"
+    "start": "node dist/server.js",
+    "test": "node dist/server.js"
   },
   "keywords": [
     "api",
